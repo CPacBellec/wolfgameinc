@@ -1,0 +1,18 @@
+{
+    "name": "wolfpac/wolfgameinc",
+    "description": "projet nws boutique",
+    "autoload": {
+        "psr-4": {
+            "Wolfpac\\Wolfgameinc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wolfpac",
+            "email": "cbellec@normandiewebschool.fr"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.4"
+    }
+}
