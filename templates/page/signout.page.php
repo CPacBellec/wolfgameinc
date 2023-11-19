@@ -1,0 +1,2 @@
+<?php
+    fromInc('signout');

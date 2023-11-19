@@ -25,7 +25,6 @@ function debugMode($active)
     }
     return;
 }
-
 function fromInc($name){
     if(file_exists("./templates/includes/". $name . ".inc.php")){
         include "./templates/includes/". $name . ".inc.php";
@@ -40,3 +39,28 @@ function fromPage($name){
         return false;
     }
 }
+function fromTool($name){
+    if(file_exists("./templates/tools/". $name .".tool.php")){
+        include "./templates/tools/" . $name .".tool.php"; 
+    }else{
+        return false;
+    }
+}
+function fromAdminRank($name){
+    if(file_exists("./templates/adminRank/". $name .".adrank.php")){
+        include "./templates/adminRank/" . $name .".adrank.php";
+    }else{
+        return false;
+    }
+}
+function fromIncAdminRank($name){
+    if(file_exists("./templates/includes/adminRank/". $name . ".inc.php")){
+        include "./templates/includes/adminRank/". $name . ".inc.php";
+    }else{
+        return false;
+    }
+}
+
+
+
+
