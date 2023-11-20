@@ -5,17 +5,14 @@
    }
 ?>
 <div class="container">
-    <div class="row">
-        <img src="./image/vegeta.jpg" class="mx-auto" height="500">
-        <h1 class="text-center">DONNE LA MOULA !!!</h1>
-    </div>
+    <h1 class="text-center">Souhaitez-vous payer cette commande ?</h1>
     <div class="row ">
     <div class="col-3 mx-auto ">
-        <a type="submit" class="btn btn-danger" href="./?page=accueil&layout=html" >Je ne donne pas la moula !</a>
+        <a type="submit" class="btn btn-danger" href="./?page=accueil&layout=html" >Non</a>
     </div>
     <div class="col-3 mx-auto">
         <form  method="post" action="./?page=commandAjout&layout=html">
-            <button type="submit" class="btn btn-success" name="success">Je donne la moula !</button>
+            <button type="submit" class="btn btn-success" name="success">Oui</button>
         </form>
     </div>
 </div> 
