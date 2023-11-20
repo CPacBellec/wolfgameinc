@@ -1,5 +1,5 @@
 <?php
-    use Adam\BoutiqueNws\Controller\ProductController;
+    use Wolfpac\Wolfgameinc\Controller\ProductController;
     $product = new ProductController();
     $products = $product->getAllProducts();
     foreach ($products as $key => $value) {
@@ -9,9 +9,9 @@
         $category = $product->getCategoryById($value['category_id']);
         echo '<div class=row>';
             echo '<div class="col-9  ms-auto me-4 mt-3">';
-                if(isset($_GET['adminMod']) && $_GET['adminMod'] === "product"){
-                   echo '<a href="./?page=adminMod&layout=html&adminMod=productUpdate&id='.$value['id'].'" > <i class="bi bi-pencil-square"></i></a>';
-                   echo '<a href="./?page=adminMod&layout=html&adminMod=productDelete&id='.$value['id'].'" > <i class="bi bi-trash"></i></a>';
+                if(isset($_GET['adminRank']) && $_GET['adminRank'] === "product"){
+                   echo '<a href="./?page=adminRank&layout=html&adminRank=productUpdate&id='.$value['id'].'" > <i class="bi bi-pencil-square"></i></a>';
+                   echo '<a href="./?page=adminRank&layout=html&adminRank=productDelete&id='.$value['id'].'" > <i class="bi bi-trash"></i></a>';
                 }
                 echo '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">

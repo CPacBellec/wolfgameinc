@@ -1,7 +1,7 @@
 <?php
-use wolfpac\Wolfgameinc\Controller\OrderController;
-use wolfpac\Wolfgameinc\Controller\ProductController;
-use wolfpac\Wolfgameinc\Controller\UserController;
+use Wolfpac\Wolfgameinc\Controller\OrderController;
+use Wolfpac\Wolfgameinc\Controller\ProductController;
+use Wolfpac\Wolfgameinc\Controller\UserController;
 $orderController = new OrderController();
 $userController = new UserController();
 $productController = new ProductController();

@@ -1,5 +1,5 @@
 <?php
-namespace wolfpac\Wolfgameinc\Controller;
+namespace Wolfpac\Wolfgameinc\Controller;
 
 class SignoutController {
     

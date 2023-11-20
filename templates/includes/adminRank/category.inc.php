@@ -1,6 +1,6 @@
 <?php
 
-use wolfpac\Wolfgameinc\Controller\CategoryController;
+use Wolfpac\Wolfgameinc\Controller\CategoryController;
 $categoryController = new CategoryController();
 $categorys = $categoryController->getAllCategory();
 $columns = ['Id' ,'Catégorie'];

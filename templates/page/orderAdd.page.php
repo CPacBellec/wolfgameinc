@@ -1,10 +1,10 @@
 <?php
     if(isset($_POST['success'])){
-        $command = new \Adam\BoutiqueNws\Controller\CommandController();
-        $productQuantity = new \Adam\BoutiqueNws\Controller\ProductController();
+        $order = new \Wolfpac\Wolfgameinc\Controller\OrderController();
+        $productQuantity = new \wolfpac\Wolfgameinc\Controller\ProductController();
         foreach($_SESSION['cart'] as  $product_id){
-            $commandStatus = $command->createCommand($_SESSION['user'],$product_id,1);
-            if(!$commandStatus){
+            $orderStatus = $order->createOrder($_SESSION['user'],$product_id,1);
+            if(!$orderStatus){
                 echo '<div class="container">
                     <div class="row">
                         <div class="alert alert-danger" role="alert">
@@ -33,9 +33,9 @@
             unset($cart[$key]);
             $_SESSION['cart'] = $cart;
         }
-        if($commandStatus && $quantityStatus){
+        if($orderStatus && $quantityStatus){
             unset($_SESSION['cart']);
-            header('Location: ./?page=command&layout=html');
+            header('Location: ./?page=order&layout=html');
             exit;
         }
     }

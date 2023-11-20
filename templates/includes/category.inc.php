@@ -1,10 +1,10 @@
 <?php
-    use Adam\BoutiqueNws\Controller\ProductController;
-    use Adam\BoutiqueNws\Controller\Database;
-    $database = new Database('BoutiqueSC');
+    use Wolfpac\Wolfgameinc\Controller\ProductController;
+    use Wolfpac\Wolfgameinc\Controller\Database;
+    $database = new Database('wolfgameinc');
     $product = new ProductController();
     if(isset($_POST['submit'])) {
-        $products = $database->searchFiltreTri($_POST['search']);
+        $products = $database->searchFilterOrderby($_POST['search']);
     }else if(isset($_GET['category']) && $_GET['category'] == 'all') {
         $products = $product->getAllProducts();
     }else{

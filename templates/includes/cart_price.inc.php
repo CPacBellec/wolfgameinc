@@ -1,5 +1,5 @@
 <?php
-use Adam\BoutiqueNws\Controller\ProductController;
+use Wolfpac\Wolfgameinc\Controller\ProductController;
     if(isset($_SESSION['cart'])){
         $cart = $_SESSION['cart'];
     }else{

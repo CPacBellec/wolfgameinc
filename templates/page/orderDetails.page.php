@@ -1,14 +1,14 @@
 <?php
-    use Adam\BoutiqueNws\Controller\CommandController;
-    use Adam\BoutiqueNws\Controller\ProductController;
-    use Adam\BoutiqueNws\Controller\UserController;
+    use Wolfpac\Wolfgameinc\Controller\orderController;
+    use Wolfpac\Wolfgameinc\Controller\ProductController;
+    use Wolfpac\Wolfgameinc\Controller\UserController;
 
-    $commandController = new CommandController();
+    $orderController = new orderController();
     $productController = new ProductController();
     $userController = new UserController();
     
-    $details = $commandController->getCommandById($_GET['id']);
-    $status = $commandController->getStatusById($details['status_id']);
+    $details = $orderController->getOrderById($_GET['id']);
+    $status = $orderController->getStatusById($details['status_id']);
     $product = $productController->getProductById($details['product_id']);
     $category = $productController->getCategoryById($product['category_id']);
     $user = $userController->getUserById($details['user_id']);

@@ -1,5 +1,5 @@
 <?php
-use wolfpac\Wolfgameinc\Controller\CategoryController;
+use Wolfpac\Wolfgameinc\Controller\CategoryController;
 $categorys = new CategoryController();
 $labels = [ 'Catégorie'];
 $inputs = [

@@ -1,5 +1,5 @@
 <?php 
-    use Adam\BoutiqueNws\Controller\AddressController;
+    use Wolfpac\Wolfgameinc\Controller\AddressController;
     if(!isset($_SESSION['user'])) {
         header("Location: ./?page=login&layout=html");
         exit;

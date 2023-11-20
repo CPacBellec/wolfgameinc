@@ -1,6 +1,6 @@
 <?php
-use wolfpac\Wolfgameinc\Controller\ProductController;
-use wolfpac\Wolfgameinc\Controller\Database;
+use Wolfpac\Wolfgameinc\Controller\ProductController;
+use Wolfpac\Wolfgameinc\Controller\Database;
 $product = new ProductController();
 $database = new Database('wolfgameinc');
 //recuperer les categories
@@ -10,7 +10,7 @@ while ($line = $statement->fetch(PDO::FETCH_ASSOC)) {
     $categories[$line['id']] = $line['name'];
 }
 
-$labels = ['Nom','Catégorie', 'Image' , 'Quantiter','Prix','Mise en avant','Description'];
+$labels = ['Nom','Catégorie', 'Image' , 'Quantité','Prix','Mise en avant','Description'];
 $inputs = [
     ['id'=>'name','name'=>'name','type'=>'text','placeholder'=>'Entrez le nom du produit','required'=>true],
     ['id'=>'category','name'=>'category','type'=>'select','placeholder'=>'','required'=>false,'option'=>$categories],
@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
     $fileContent = $database->getEscaping( $fileContent);
     
     if($product->createProduct($_POST['name'],$_POST['category'],floatval($_POST['price']),$fileContent,$_POST['quantity'],$_POST['first'],isset($_POST['description'])?$_POST['description']:"")){
-        header('Location: ./?page=adminMod&layout=html&adminMod=product');
+        header('Location: ./?page=adminRank&layout=html&adminRank=product');
         exit;
     }
 }

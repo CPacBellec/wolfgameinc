@@ -1,6 +1,6 @@
 <?php
     
-    namespace wolfpac\Wolfgameinc\Controller;
+    namespace Wolfpac\Wolfgameinc\Controller;
 
     use PDO;
     use PDOException;

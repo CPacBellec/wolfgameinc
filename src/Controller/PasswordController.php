@@ -1,7 +1,7 @@
 <?php
-namespace wolfpac\Wolfgameinc\Controller;
+namespace Wolfpac\Wolfgameinc\Controller;
 
-use wolfpac\Wolfgameinc\Controller\Database;
+use Wolfpac\Wolfgameinc\Controller\Database;
 use PDO;
 
 class PasswordController {

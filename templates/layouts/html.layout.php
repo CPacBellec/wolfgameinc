@@ -1,5 +1,5 @@
 <?php
-fromstruc("html_header");
-fromstruc("menu");
+fromPage("html_header");
+fromPage("menu");
 echo $pageContent['html'];
-fromstruc("html_footer");
+fromPage("html_footer");

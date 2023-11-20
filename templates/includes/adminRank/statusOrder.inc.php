@@ -1,8 +1,8 @@
 <?php
-use wolfpac\Wolfgameinc\Controller\OrderController;
-use wolfpac\Wolfgameinc\Controller\Database;
+use Wolfpac\Wolfgameinc\Controller\OrderController;
+use Wolfpac\Wolfgameinc\Controller\Database;
 $commands = new OrderController();
-$database = new Database('BoutiqueSC');
+$database = new Database('wolfgameinc');
 $status = [];
 $statement = $database->table('statusOrder')->get([])->do();
 while ($line = $statement->fetch(PDO::FETCH_ASSOC)) {

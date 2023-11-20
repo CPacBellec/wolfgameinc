@@ -5,27 +5,27 @@
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-            <a href="./?page=adminMod&layout=html&adminMod=product" class="nav-link <?php echo isset($_GET['adminMod']) && $_GET['adminMod'] === "product"? "active" : "text-white" ;?>">
+            <a href="./?page=adminRank&layout=html&adminRank=product" class="nav-link <?php echo isset($_GET['adminRank']) && $_GET['adminRank'] === "product"? "active" : "text-white" ;?>">
                 <i class="bi bi-box-seam p-2"></i>
                 Produits
             </a>
         </li>
         <li>
-            <a href="./?page=adminMod&layout=html&adminMod=category" class="nav-link <?php echo isset($_GET['adminMod']) && $_GET['adminMod'] === "category"? "active" : "text-white" ;?>">
+            <a href="./?page=adminRank&layout=html&adminRank=category" class="nav-link <?php echo isset($_GET['adminRank']) && $_GET['adminRank'] === "category"? "active" : "text-white" ;?>">
             <i class="bi bi-tag p-2"></i>
-                Category
+                Categorie
             </a>
         </li>
         <li class="nav-item">
-            <a href="./?page=adminMod&layout=html&adminMod=commands" class="nav-link <?php echo isset($_GET['adminMod']) && $_GET['adminMod'] === "commands"? "active" : "text-white" ;?>">
+            <a href="./?page=adminRank&layout=html&adminRank=commands" class="nav-link <?php echo isset($_GET['adminRank']) && $_GET['adminRank'] === "commands"? "active" : "text-white" ;?>">
                 <i class="bi bi-mailbox-flag p-2"></i>
                 Commandes
             </a>
         </li>
         <li>
-            <a href="./?page=adminMod&layout=html&adminMod=inventory" class="nav-link <?php echo isset($_GET['adminMod']) && $_GET['adminMod'] === "inventory"? "active" : "text-white" ;?>">
+            <a href="./?page=adminRank&layout=html&adminRank=inventory" class="nav-link <?php echo isset($_GET['adminRank']) && $_GET['adminRank'] === "inventory"? "active" : "text-white" ;?>">
                 <i class="bi bi-ui-checks-grid p-2"></i>
-                Inventaires
+                Inventaire
             </a>
         </li>
     </ul>

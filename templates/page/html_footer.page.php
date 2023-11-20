@@ -1,7 +1,7 @@
 <footer class="footer mt-3 py-3 bg-body-tertiary" <?php echo (isset($_GET['page']) && $_GET['page']==="adminMod"? "style='margin-left: 272px;'" : "") ;?>>
     <div class="container">
         <span class="text-body-secondary">
-            Si tu cherches à copier "Ça va pas commencer à Rutshuru, Ni à Manono, Ni à Masisi, Ça va commencer ici Et ça va PETER PETEEER!!! Vous allez foui ! Vous entENDEZ ! vous allez fuiiir !"
+            Wolfgameinc 2023
         </span>
     </div>
 </footer>

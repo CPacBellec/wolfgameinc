@@ -1,5 +1,5 @@
 <?php
-    use Adam\BoutiqueNws\Controller\ProductController;
+    use Wolfpac\Wolfgameinc\Controller\ProductController;
     $product = new ProductController();
     $details = $product->getProductById($_GET['product']);
     $category = $product->getCategoryById($details['category_id']);
@@ -22,10 +22,10 @@
                     <br>
                     <p class="product-description"><?php echo $details['description'];?></p>
                     <h4 class="price">Prix : <span><?php echo $details['price'];?> €</span></h4>
-                    <p class="quantiter"> Quantiter : <strong><?php echo $details['quantity'];?></strong></p>
+                    <p class="quantiter"> Quantité : <strong><?php echo $details['quantity'];?></strong></p>
                     <div class="row">
                         <div class="col-6">
-                            <h5 class="sizes">Category:
+                            <h5 class="sizes">Categorie:
                                 <span class="size" data-toggle="tooltip" title="small"><?php echo $category;?></span>
                             </h5>
                         </div>

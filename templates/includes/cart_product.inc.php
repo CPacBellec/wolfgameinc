@@ -1,6 +1,6 @@
 <?php
-use Adam\BoutiqueNws\Controller\ProductController;
-use Adam\BoutiqueNws\Controller\CategoryController;
+use Wolfpac\Wolfgameinc\Controller\ProductController;
+use Wolfpac\Wolfgameinc\Controller\CategoryController;
     if(isset($_POST['close'])){
         $cart = $_SESSION['cart'];
         $key = array_search($_POST['close'],$cart);
